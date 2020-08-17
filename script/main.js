@@ -46,7 +46,7 @@ function showData(search){
 }
 // single search button Event
 async function singleSearchValue(searchValue){
-    const searchResult= await fetch(`${apiUrl}/suggest/${searchValue}/`)
+    const searchResult= await fetch(`${apiUrl}/suggest/${searchValue}`)
     const data=await searchResult.json();
     getSingleSearch(data)
 }
